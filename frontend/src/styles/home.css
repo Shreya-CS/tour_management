@@ -1,0 +1,64 @@
+.hero__content h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.hero__content h1 .highlight {
+    color: var(--color-secondary);
+}
+
+.hero__content p {
+    font-size: 1.1rem;
+    color: var(--color-light);
+    line-height: 2rem;
+}
+
+.hero__img-box img,
+.hero__img-box video {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero__img-box img:hover,
+.hero__img-box video:hover {
+    border: 1px solid var(--color-secondary);
+    transition: var(--transition);
+}
+
+.hero__content {
+    padding-top: 3rem;
+}
+
+.hero__img-box {
+    padding-top: 2rem;
+}
+
+.services__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    font-style: italic;
+}
+
+.services__title {
+    font-size: 2.5rem;
+    font-weight: 350;
+    color: var(--color-white);
+}
+
+.featured__tour-title {
+    font-size: 2.5rem;
+    font-weight: 350;
+    color: white;
+}
+
+.section__subtitle {
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-secondary);
+}
