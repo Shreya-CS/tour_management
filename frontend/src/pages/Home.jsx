@@ -9,6 +9,9 @@ import Subtitle from '../shared/Subtitle';
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured_tours/FeaturedTourList';
+import experienceImg from '../assets/images/customer-feedback.png';
+import gallery from '../components/image_gallery/gallery';
+import MasonryImagesGallery from '../components/image_gallery/MasonryImagesGallery';
 const Home = () => {
   return (
     <>
@@ -66,6 +69,55 @@ const Home = () => {
               <h2 className='featured__tour-title'>Our Featured Tours</h2>
             </Col>
             <FeaturedTourList />
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg='6'>
+              <div className="experience__content">
+                <Subtitle subtitle={'Experience'} />
+                <h2>Lorem ipsum dolor sit amet<br />Lorem, ipsum dolor.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit<br />Sit libero perspiciatis, nemo nostrum non officiis?
+                </p>
+              </div>
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successfull Trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular Clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years of Experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg='6'>
+              <div className="experience__img">
+                <img src={experienceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12'>
+              <Subtitle subtitle={'Gallery'} />
+              <h2 className="gallery__title">
+                Visit us virtually through our gallery
+              </h2>
+            </Col>
+            <Col lg='12'>
+              <MasonryImagesGallery />
+            </Col>
           </Row>
         </Container>
       </section>

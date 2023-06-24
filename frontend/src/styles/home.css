@@ -62,3 +62,59 @@
     font-style: italic;
     color: var(--color-secondary);
 }
+
+.experience__content h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 350;
+    color: white;
+}
+
+.experience__content p {
+    font-size: 1.1rem;
+    color: var(--color-light);
+    margin-top: 1rem;
+}
+
+.counter__wrapper {
+    margin-top: 2.5rem;
+}
+
+.counter__wrapper span {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+    font-style: 1.6rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6 {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 0.7em;
+}
+
+.experience__img img {
+    width: 73%;
+}
+
+.gallery__title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 350;
+    color: white;
+
+}
+
+.masonry__img {
+    transition: var(--transition);
+}
+
+.masonry__img:hover {
+    transform: scale(1.1);
+}
