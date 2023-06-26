@@ -12,6 +12,8 @@ import FeaturedTourList from '../components/Featured_tours/FeaturedTourList';
 import experienceImg from '../assets/images/customer-feedback.png';
 import gallery from '../components/image_gallery/gallery';
 import MasonryImagesGallery from '../components/image_gallery/MasonryImagesGallery';
+import Testimonials from '../components/Testimonial/Testimonials';
+import Newsletter from '../shared/newsletter';
 const Home = () => {
   return (
     <>
@@ -115,12 +117,29 @@ const Home = () => {
                 Visit us virtually through our gallery
               </h2>
             </Col>
-            <Col lg='12'>
+            <Col lg='12' className='images'>
               <MasonryImagesGallery />
             </Col>
           </Row>
         </Container>
       </section>
+
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12'>
+              <Subtitle subtitle={'Customer Love'} />
+              <h2 className="testimonial__title">What our customers say about us</h2>
+            </Col>
+            <Col lg='12'>
+              <Testimonials />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <Newsletter />
     </>
   )
 }

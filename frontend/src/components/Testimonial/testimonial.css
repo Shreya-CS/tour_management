@@ -1,0 +1,8 @@
+.testimonial {
+    color: white;
+    font-weight: 1rem;
+}
+
+.testimonial p {
+    color: var(--color-light);
+}

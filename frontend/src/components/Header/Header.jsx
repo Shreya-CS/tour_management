@@ -6,15 +6,15 @@ import logo from '../../assets/images/logo.png'
 const nav__links = [
   {
     path: '/home',
-    display: 'Home'
+    display: 'Home',
   },
   {
     path: '/about',
-    display: 'About'
+    display: 'About',
   },
   {
     path: '/tours',
-    display: 'Tours'
+    display: 'Tours',
   },
 ]
 const Header = () => {
