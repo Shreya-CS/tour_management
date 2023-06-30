@@ -33,6 +33,8 @@ const quick__links2 = [
   },
 ]
 const Footer = () => {
+
+  const year = new Date().getFullYear()
   return <footer className="footer">
     <Container>
       <Row>
@@ -48,13 +50,13 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col lg='3'>
+        <Col lg='3' className='discover'>
           <h5 className='footer__link-title'>Discover</h5>
           <ListGroup className='footer__quick-links'>
             {
               quick__links.map((item, index) => (
                 <ListGroupItem key={index} className='ps-0 border-0'>
-                  <Link to={item.path}>{item.display}</Link>
+                  <Link className='discover' to={item.path}>{item.display}</Link>
                 </ListGroupItem>
               ))
             }
@@ -74,6 +76,33 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='3'>
+          <h5 className='footer__link-title'>Contact</h5>
+
+          <ListGroup className='footer__quick-links'>
+            <ListGroupItem className='ps-0 border-0 d-fex align-items-center gap-3'>
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span><i className='ri-map-pin-line'></i></span>
+                <p className='mb-0'>Coimbatore , Bangalore</p>
+              </h6>
+            </ListGroupItem>
+            <ListGroupItem className='ps-0 border-0 d-fex align-items-center gap-3'>
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span><i className='ri-mail-line'></i></span>
+                <p className='mb-0'>abc@gmail.com</p>
+              </h6>
+
+            </ListGroupItem>
+            <ListGroupItem className='ps-0 border-0 d-fex align-items-center gap-3'>
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span><i className='ri-phone-fill'></i></span>
+                <p className='mb-0'>+91 2356974532</p>
+              </h6>
+
+            </ListGroupItem>
+          </ListGroup>
+        </Col>
+        <Col lg='12' className='text-center pt-5'>
+          <p className="copyright">Copyright {year} , design and developed by Touristor.All rights reserved.</p>
         </Col>
       </Row>
     </Container>
